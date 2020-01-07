@@ -1,0 +1,14 @@
+{%extends "base.html"%}
+
+{% block body %}
+<div>
+    <h1 style="text-align: center;">Update Task</h1>
+
+</div>
+<div style="margin:50px;" align="center">
+    <form action="/update/{{task.id}}" method="POST">
+        <input type="text" name="content" id="content" value="{{task.content}}" style="width: 500px; -webkit-text-fill-color:dimgray; border-radius: 15px;">
+        <input type="submit" value="Update" style="float:center; background-color:rgb(187, 192, 182); border: none; color: #fff; font-size: 1em; text-transform:inherit; font-weight: normal; border-radius: 15px;">
+    </form>
+</div>
+{% endblock %}
